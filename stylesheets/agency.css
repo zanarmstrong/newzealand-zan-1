@@ -609,18 +609,16 @@ hr.style-four { height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgb
     width: 100%;
 }
 
-
-
-.minusPadding {
+.img-grid {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.photo-container {
+    margin: -1px;
 }
 
 
 .img-responsive {
     border: 3px solid #383A3C;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> master
