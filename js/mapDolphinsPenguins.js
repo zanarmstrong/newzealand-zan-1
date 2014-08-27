@@ -1,4 +1,3 @@
-
 // leaflet maps
 /*var map = L.map('map').setView([-39.156833, 175.632167], 6);
 
@@ -11,8 +10,6 @@ var marker = L.marker([-39.156833, 175.632167]).addTo(map);
 
 marker.bindPopup("<b>Mount Ngauruhoe</b>").openPopup();
 */
-
-// Google Maps
 
 function initializeMap(lat, lon, idName, newTitle, zoomLevel) {
 		var myLatlng = new google.maps.LatLng(lat, lon);
