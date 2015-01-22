@@ -39,7 +39,11 @@ function initializeMap(locations, idName, newTitle, zoomLevel) {
 
 var locations = [
       ['Spa Park Taupo', -38.672886, 176.0873629],
-      ['Milford Sound', -44.67162, 167.92562]
+      ['Milford Sound', -44.67162, 167.92562],
+      ['Waipohatu Waterfalls', -46.618390, 169.012422],
+      ['Rob Roy Glacier', -44.5015724,168.7221595],
+      ['Waterfalls on the drive', -44.5504644,168.8909455],
+      ['Canyoning from Wanaka', -44.7031813,169.1320981]
     ];
 
 initializeMap(locations, "map-canvas-waterfalls", "Waterfalls", 4);

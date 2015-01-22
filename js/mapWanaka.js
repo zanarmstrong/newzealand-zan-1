@@ -11,11 +11,9 @@ var marker = L.marker([-39.156833, 175.632167]).addTo(map);
 marker.bindPopup("<b>Mount Ngauruhoe</b>").openPopup();
 */
 
-
-
-function initializeMap(lat, lon, idName, newTitle, zoomLevel) {
-		console.log('hi')
-		var myLatlng = new google.maps.LatLng(lat, lon);
+function initializeMap(locations, idName, newTitle, zoomLevel) {
+    console.log(locations)
+		var myLatlng = new google.maps.LatLng(locations[0][1], locations[0][2]);
 
         var mapOptions = {
           center: myLatlng,
@@ -27,12 +25,27 @@ function initializeMap(lat, lon, idName, newTitle, zoomLevel) {
             mapOptions);
 
 
-		var marker = new google.maps.Marker({
-    	position: myLatlng,
-    	title:newTitle
-		});
+    var marker, i;
 
-		marker.setMap(map);
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        title: locations[i][0]
+      })
+    }
+
 }
 
-initializeMap(-44.70318,  169.13210, "map-canvas-wanaka", "Wanaka", 8);
+var locations = [
+      ['Spa Park Taupo', -38.672886, 176.0873629],
+      ['Milford Sound', -44.67162, 167.92562],
+      ['Waipohatu Waterfalls', -46.618390, 169.012422],
+      ['Rob Roy Glacier', -44.5015724,168.7221595],
+      ['Waterfalls on the drive', -44.5504644,168.8909455],
+      ['Canyoning from Wanaka', -44.7031813,169.1320981]
+    ];
+
+initializeMap(locations, "map-canvas-waterfalls", "Waterfalls", 4);
+
+
