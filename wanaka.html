@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Wanaka</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="stylesheets/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- include leaflet -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+    <!-- include Google Maps -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUciASJdTvY0ghMa0L1LpmMQeNwlYUXRc">
+    </script>
+
+</head>
+
+<body id="DolphinsAndPenguins">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="index.html">New Zealand</a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+<section id="highlight" style="background-color: #f7f7f7">
+ <div class="container">
+   	<div class="row">
+    		<div class="modal-body text-center">
+                <h1>Wanaka</h1>
+            </div>
+    </div>
+    <div class="row">
+    	<div class="col-lg-12">
+                <hr class="style-four"></hr>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-lg-8 col-md-8">
+    		<p class="item-intro text-muted">This outdoorsy town sports awesome single-track mountain biking, many waterfalls, hike to great view of glaciers, great bouldering, and super fun canyonering. What's not to like?</p>
+            <h4>Why?</h4>
+            <p class="item-intro text-muted">This spot made the top 6 because we loved the track designed specifically for mountain biking with awesome banked curves, the canyon adventure, and a beautiful walk in a valley up to Rob Roy glacier. Canyoning included rapelling through waterfalls, sliding freely into pools, ziplining, and an optional jump off a cliff. Swimming in the lake or river was also a highlight. We didn't climb while there, but heard that the bouldering was excellent. We could have stayed in Wanaka for weeks and kept finding more things to do.</p>
+            <p class="item-intro text-muted">And, don't forget the waterfalls.</p>
+            <h4>Where?</h4>
+            <p class="item-intro text-muted">The town of Wanaka is pretty small and located on Lake Wanaka. Within a on hour drive are many adventures and hikes. The well-known highlight of the town is <a href="http://www.paradiso.net.nz/">a movie theater</a> in which the seats are non-matching couches and where you can drink a beer or eat as you enjoy the show. It's a good place for a rainy evening or to chill out after the day's adventures. Beware that because of the town's popularity, much of the town is off-limits to "freedom camping" so you'll need to use one of the many designated camping grounds. We liked the one in <a href="https://www.rankers.co.nz/experiences/5422-Albert_Town_Camping_Ground">Albert town</a> because it was on the river, except for the night we stayed out late at the movie and got locked out of the camping ground.</p>
+            <h4>More information?</h4>
+            <p class="item-intro text-muted">As it's a pretty touristy place, there is plenty of information online about Wanaka. We specifically enjoyed <a href="http://www.doc.govt.nz/parks-and-recreation/tracks-and-walks/otago/wanaka-makarora/deans-bank-track/">Dean's Bank mountain bike trail</a>, <a href="http://www.deepcanyon.co.nz/">Deep Canyon</a> guides for canyoning, and hiking <a href="http://www.doc.govt.nz/parks-and-recreation/tracks-and-walks/otago/wanaka-makarora/rob-roy-track/">Rob Roy</a> trail.</p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+                <div id="map-canvas-wanaka" class="map"></div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-lg-12">
+                <hr class="style-four"></hr>
+        </div>
+    </div>
+    <div class="row">
+	    <div class="modal-body photo-container">
+    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-grid">
+    		<img src="images/wanaka01small.jpg" class="img-detail" alt="">
+    	</div>
+    	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-grid">
+    		<img src="images/wanaka02small.jpg" class="img-detail" alt="">
+    	</div>
+    	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 img-grid">
+    		<img src="images/wanaka042small.jpg" class="img-detail" alt="">
+    	</div>
+    	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 img-grid">
+    		<img src="images/wanaka04small.jpg" class="img-detail" alt="">
+    	</div>
+    	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 img-grid">
+    		<img src="images/wanaka03small.jpg" class="img-detail" alt="">
+    	</div>
+        <div class="clearfix visible-sm-block"></div>
+    	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 img-grid">
+    		<img src="images/wanaka05small.jpg" class="img-detail" alt="">
+    	</div>
+    	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 img-grid">
+    		<img src="images/wanaka06small.jpg" class="img-detail" alt="">
+    	</div>
+    	<div class="clearfix visible-lg-block clearfix visible-md-block"></div>
+    	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 img-grid">
+    		<img src="images/wanaka11small.jpg" class="img-detail" alt="">
+    	</div>
+    	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 img-grid">
+    		<img src="images/wanaka10small.jpg" class="img-detail" alt="">
+    	</div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 img-grid">
+            <img src="images/wanaka09small.jpg" class="img-detail" alt="">
+        </div>
+    	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 img-grid">
+    		<img src="images/wanaka08small.jpg" class="img-detail" alt="">
+    	</div>
+    	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 img-grid">
+    		<img src="images/wanaka12small.jpg" class="img-detail" alt="">
+    	</div>
+    	</div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <hr class="style-four"></hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <a class="btn btn-xl" href="index.html#top6">Go Back to Top 6 List</a>
+    </div>
+</div>
+
+</section>
+</section>
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+    <!-- include map -->
+    <script src="js/mapWanaka.js"></script>
+
+</body>
+
+</html>

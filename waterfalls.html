@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Waterfalls</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="stylesheets/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- include leaflet -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+    <!-- include Google Maps -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUciASJdTvY0ghMa0L1LpmMQeNwlYUXRc">
+    </script>
+
+</head>
+
+<body id="ClifdenCaves">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="index.html">New Zealand</a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+<section id="highlight" style="background-color: #f7f7f7">
+ <div class="container">
+   	<div class="row">
+    		<div class="modal-body text-center">
+                <h1>Waterfalls</h1>
+            </div>
+    </div>
+    <div class="row">
+    	<div class="col-lg-12">
+                <hr class="style-four"></hr>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-lg-8 col-md-8">
+    		<p class="item-intro text-muted">This is sort of cheating, as we found waterfalls all over the islands! They were big and small, hot and cold. And, Jonas wanted to swim in them all!</p>
+            <h4>Why?</h4>
+            <p class="item-intro text-muted">Waterfalls make you feel alive! And are beautiful. They can also be adventurous.  We went canyoning in Niger Stream near Wanaka, which included sliding through, on, or over many waterfalls. We also enjoyed the quiet, forest walk to <a href="http://nzfrenzysouth.wordpress.com/waiopohatu-waterfalls-loop-h7/">Waiopohatu Waterfalls</a> as much as the waterfalls themselves. It's by no means a "must do" on the New Zealand whirlwind tour, but it was really nice to be away from the crowds and surrounded by a beautiful forest. It was a good place to try a "quiet hike" of no talking for a few minutes, to listen to the sound of the forest. On the north island there is substantial geo-thermal activity. In Spa Park Taupo, a hot stream with small waterfalls joins with a cold river. It's quite popular to sit under the hot waterfall or in the hot pools and then go cool off in the river.</p>
+            <h4>Where?</h4>
+            <p class="item-intro text-muted">Some favorite waterfalls were in the Catlins, near Wanaka, and especially the hot waterfalls on the North Island. Most impressively, in Miford Sound water was streamming off the cliffs on every vertical face after two weeks of rain. It was nearly impossible to appreciate the size of the mountains and of the waterfalls.</p>
+            <h4>More information?</h4>
+            <p class="item-intro text-muted">For canyoning, check out the video <a href="https://www.youtube.com/watch?v=U7Se0My4ZAU">here</a> and the <a href="http://www.deepcanyon.co.nz/">Deep Canyon website</a>. In Milford Sound, we recommend <a href="http://www.roscosmilfordkayaks.com/">Roscos for kayaking</a>, although the weather was too rough when we were there so we went out in a ferry boat instead. The upside of the bad weather was that the waterfals were even more spectacular than usual! Directions to Spa Park in Taupo are <a href="http://www.greatlaketaupo.com/things-to-do/listings/otumuheke-stream,-spa-park/">here</a>. Be careful with your valuables here, as it's known to be a tempting spot for petty theives.</p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+                <div id="map-canvas-waterfalls" class="map"></div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-lg-12">
+                <hr class="style-four"></hr>
+        </div>
+    </div>   <div class="row">
+        <div class="modal-body photo-container">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-grid">
+            <img src="images/waterfalls13.JPG" class="img-detail" alt=""
+            data-toggle="tooltip" data-placement="auto right top" title="View of the volcano in the distance.">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 img-grid">
+            <img src="images/waterfalls09.JPG" class="img-detail" alt=""
+            data-toggle="tooltip" data-placement="auto right top" title="Onward! Starting the hike with spirit.">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 img-grid">
+            <img src="images/waterfalls15.JPG" class="img-detail" alt=""
+            data-toggle="tooltip" data-placement="auto right top" title="Beautiful rocks!!!">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 img-grid">
+            <img src="images/waterfalls11.JPG" class="img-detail" alt=""
+            data-toggle="tooltip" data-placement="auto right top" title="Beautiful rocks!!!">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 img-grid">
+            <img src="images/waterfalls01.JPG" class="img-detail" alt=""
+            data-toggle="tooltip" data-placement="auto right top" title="Beautiful rocks!!!">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8 img-grid">
+            <img src="images/waterfalls02.JPG" class="img-detail" alt=""
+            data-toggle="tooltip" data-placement="auto right top" title="Beautiful rocks!!!">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 img-grid">
+            <img src="images/waterfalls14.JPG" class="img-detail" alt=""
+            data-toggle="tooltip" data-placement="auto right top" title="Beautiful rocks!!!">
+        </div>
+        <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 img-grid">
+            <img src="images/waterfalls03.JPG" class="img-detail" alt="">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 img-grid">
+            <img src="images/waterfalls16.JPG" class="img-detail" alt="">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 img-grid">
+            <img src="images/waterfalls10.JPG" class="img-detail" alt="">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 img-grid">
+            <img src="images/waterfalls04.JPG" class="img-detail" alt="">
+        </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <hr class="style-four"></hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <a class="btn btn-xl" href="index.html#top6">Go Back to Top 6 List</a>
+    </div>
+</div>
+
+</section>
+
+</section>
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+    <!-- include map -->
+    <script src="js/mapWaterfalls.js"></script>
+
+</body>
+
+</html>

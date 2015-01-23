@@ -17,6 +17,8 @@ var cbpAnimatedHeader = (function() {
 		changeHeaderOn = 170;
 
 	function init() {
+		scrollPage();
+
 		window.addEventListener( 'scroll', function( event ) {
 			if( !didScroll ) {
 				didScroll = true;

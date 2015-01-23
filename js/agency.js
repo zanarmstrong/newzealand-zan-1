@@ -19,3 +19,8 @@ $(function() {
 $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
+
+// enable tooltips 
+/*$('[data-toggle="tooltip"]').tooltip({
+}); */
+
